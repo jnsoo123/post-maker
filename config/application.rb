@@ -40,7 +40,7 @@ module PostMaker
     end
 
     config.after_initialize do
-      Post.refresh
+      Post.refresh rescue nil
     end
   end
 end
