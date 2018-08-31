@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: post-maker_production
   username: post-maker
   password: <%= ENV['POST-MAKER_DATABASE_PASSWORD'] %>
