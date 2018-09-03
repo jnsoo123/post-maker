@@ -50,10 +50,10 @@ end
 
 And you can use it like this in the views:
 
-```html
-<%= facade.classmates %>
-<%= facade.lessons %>
-<%= facade.school %>
-<%= form_for facade.note do |f| %>
+```erb
+<%= @facade.classmates %>
+<%= @facade.lessons %>
+<%= @facade.school %>
+<%= @form_for facade.note do |f| %>
 <% end %>
 ```
