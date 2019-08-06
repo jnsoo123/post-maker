@@ -2,7 +2,7 @@ class Post < ApplicationRecord
   def self.refresh
     Post.destroy_all
 
-    Dir[Rails.root.join('public', 'posts', '*.md')].each do |file|
+    Dir[Rails.root.join('public', 'posts', '*.md')].sort.each do |file|
       file_name = file.split('/').last.gsub('.md', '').gsub('_', ' ').capitalize
       body      = File.read(file)
 

@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 end
 ```
 
-Where you can use the facade pattern to make the controlelr thinner and lesser variables.
+Where you can use the facade pattern to make the controller thinner and lesser variables.
 
 ```ruby
 # your_app/app/facades/users_index_facade.rb
