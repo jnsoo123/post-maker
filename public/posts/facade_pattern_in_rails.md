@@ -54,6 +54,6 @@ And you can use it like this in the views:
 <%= @facade.classmates %>
 <%= @facade.lessons %>
 <%= @facade.school %>
-<%= @form_for facade.note do |f| %>
+<%= @form_for @facade.note do |f| %>
 <% end %>
 ```
